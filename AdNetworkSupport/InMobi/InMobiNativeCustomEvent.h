@@ -1,30 +1,21 @@
 //
 //  InMobiNativeCustomEvent.h
-//  MoPub
+//  InMobiMopubSampleApp
 //
-//  Copyright (c) 2014 MoPub. All rights reserved.
+//  Created by Niranjan Agrawal on 28/10/15.
+//
 //
 
-#if __has_include(<MoPub/MoPub.h>)
-    #import <MoPub/MoPub.h>
-#else
-    #import "MPNativeCustomEvent.h"
-#endif
+//#ifndef InMobiNativeCustomEvent_h
+//#define InMobiNativeCustomEvent_h
+//
+//#endif /* InMobiNativeCustomEvent_h */
+//
+//#import
 
-/*
- * Certified with version 4.4.1 of the InMobi SDK.
- */
+#import "MPNativeCustomEvent.h"
+#import "IMNativeDelegate.h"
 
-@interface InMobiNativeCustomEvent : MPNativeCustomEvent
-
-/**
- * Registers an InMobi app ID to be used when making ad requests.
- *
- * When making ad requests, the InMobi SDK requires you to provide your app ID. When
- * integrating InMobi using a MoPub custom event, this ID is typically configured via your
- * InMobi network settings on the MoPub website. However, if you wish, you may use this method to
- * manually provide the custom event with your ID.
- */
-+ (void)setAppId:(NSString *)appId;
+@interface InMobiNativeCustomEvent : MPNativeCustomEvent <IMNativeDelegate>
 
 @end

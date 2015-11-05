@@ -1,16 +1,23 @@
 //
-//  InMobiNativeAdAdapter.h
-//  MoPub
+//  InMobiNativeAdapter.h
+//  InMobiMopubSampleApp
 //
-//  Copyright (c) 2014 MoPub. All rights reserved.
+//  Created by Niranjan Agrawal on 28/10/15.
 //
+//
+//
+//#ifndef InMobiNativeAdapter_h
+//#define InMobiNativeAdapter_h
+//
+//
+//#endif /* InMobiNativeAdapter_h */
 
 #import <Foundation/Foundation.h>
 
 #if __has_include(<MoPub/MoPub.h>)
-    #import <MoPub/MoPub.h>
+#import <MoPub/MoPub.h>
 #else
-    #import "MPNativeAdAdapter.h"
+#import "MPNativeAdAdapter.h"
 #endif
 
 @class IMNative;
